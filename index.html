@@ -14,30 +14,17 @@
         GitHub pages.
       </p>
 
-      <script>
-        (function () {
-          var iframe = document.createElement("iframe");
-          iframe.src =
-            "https://dev.nuvia.co/public/?x-api-key=6a79f375-6935-4815-a66b-8def4dcef2e1";
-          iframe.id = "nuvia-agent";
-          iframe.style.position = "fixed";
-          iframe.style.bottom = "20px";
-          iframe.style.right = "20px";
-          iframe.style.border = "none";
-          iframe.style.borderRadius = "10px 10px 0 0";
-          iframe.style.zIndex = "9999";
-          iframe.style.backgroundColor = "transparent";
-          window.onload = function () {
-            document.body.appendChild(iframe);
-          };
-          window.addEventListener("message", function (event) {
-            if (event.data?.height) {
-              iframe.style.height = event.data.height + "px";
-              iframe.style.width = event.data.width + "px";
-            }
-          });
-        })();
-      </script>
+      <script>(function(){var iframe=document.createElement('iframe');iframe.src="https://dev.nuvia.co/public/?x-api-key=bec792b7-b0f9-43c5-8025-a1aeab8571de";iframe.id='nuvia-agent'
+        iframe.style.position='fixed'
+        iframe.style.bottom='20px'
+        iframe.style.right='20px'
+        iframe.style.border='none'
+        iframe.style.borderRadius='10px 10px 0 0'
+        iframe.style.zIndex='9999'
+        iframe.style.backgroundColor='transparent'
+        window.onload=function(){document.body.appendChild(iframe);}
+        window.addEventListener('message',function(event){if(event.data?.height){iframe.style.height=event.data.height+'px'
+        iframe.style.width=event.data.width+'px'}})})();</script>
     </div>
   </body>
 </html>
