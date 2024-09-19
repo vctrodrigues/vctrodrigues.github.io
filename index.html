@@ -18,6 +18,30 @@
           GitHub pages.
         </p>
       </main>
+      <script>
+        (function () {
+          var iframe = document.createElement("iframe");
+          iframe.src =
+            "https://dev.nuvia.co/public/?x-api-key=ce3417a8-aa67-4b43-b5ad-0c676b873ade";
+          iframe.id = "nuvia-agent";
+          iframe.style.position = "fixed";
+          iframe.style.bottom = "20px";
+          iframe.style.right = "20px";
+          iframe.style.border = "none";
+          iframe.style.borderRadius = "10px 10px 0 0";
+          iframe.style.zIndex = "9999";
+          iframe.style.backgroundColor = "transparent";
+          window.onload = function () {
+            document.body.appendChild(iframe);
+          };
+          window.addEventListener("message", function (event) {
+            if (event.data?.height) {
+              iframe.style.height = event.data.height + "px";
+              iframe.style.width = event.data.width + "px";
+            }
+          });
+        })();
+      </script>
     </div>
   </body>
 </html>
